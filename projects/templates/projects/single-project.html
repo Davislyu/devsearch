@@ -1,0 +1,15 @@
+{% extends 'main.html' %} 
+{% block content %}
+<h1>{{project.title}}</h1>
+<p>{{project.description}}</p>
+<ul>
+    {%if tags%}
+    {%for tag in tags%}
+    <li>{{tag}}</li>
+    {%endfor%}
+    {%else%}
+    <p>No tags to show!</p>
+    {%endif%}
+    
+</ul>
+{% endblock content %}
