@@ -11,7 +11,10 @@
   </head>
   <body>
     {% include 'navbar.html' %} {%block content%} {%endblock content%}
-    <p>Footer</p>
+    <div style="display:flex;border:1px solid white;align-items:center;font-size:24px;gap:1rem;">
+      <p>Footer</p>
+      <a href="{% url 'projects' %}" >Home</a>
+    </div>
     <h1>
     
   </body>
